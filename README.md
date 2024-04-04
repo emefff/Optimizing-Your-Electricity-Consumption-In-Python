@@ -13,3 +13,24 @@ Of course we can investigate our usage in much greater detail and simulate (prof
 
 ![Figure_2](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/4dcf5e63-048b-4764-8f9d-e107197a56a7)
 
+We find the optimum starting time for our laundry machine to be in the interval of 520-580 minutes of this day (that is between 08:40 and 09:40 on this day). For the next round of optimization we shift the starting time of the dishwasher. The starting time of the laundry machine is set to the center value of above optimum interval, that is 09:10. We brute-force power curves again by scanning from 5-16 o'clock but with the dishwasher:
+
+![Figure_3](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/d5ff3ef4-cd53-43fa-9f84-4a52f60ae5a4)
+
+What can we deduct from this? Optimizin the second appliance leads to overlapping with the optimized laundry machine and leads to one local maximum (the peak). It is caused by overlapping power spikes of the two devices. We want to avoid that, this directly causes the optimim interval to be much more narrow compared to the first optimization. Now we only can shift our dishwasher between 490-510 minutes, that is 08:10-08:30. If we just follow the above mentioned common rule of tiny solar array owners ('swich on all your stuff during solar hours') we could land on this local maximum if we are not careful. It would be a coincidence, though.
+
+In the end, we can calculate the energy saved to be around 0.5kWh and simulate an optimum profile to be:
+
+![Figure_4](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/b0cb3d89-d92e-47b7-9784-d9689a11a0b2)
+
+So what is the conclusion of this?
+1.) Even we want to optimize only two devices, time is a critcal factor.
+2.) In reality, we'd have to know our solar array power profile in advance to optimize our devices in the morning! This in only possible with a good prediction of the solar profiles. Such a prediction is possible in Home Assistant, but it is sometimes a bit sketchy. It only works on perfect solar days.
+3.) This type of software could also be used to simulate weeks, months or years in advance. However, we'd rather need 50-100 power profiles (for example for the solar array we'd need days in summer, autumn, winter, spring with sunny, cloudy, etc. weather. Also, water boiler need less energy in summer when we also need less warm water etc. This is a lot of work.) than 5-10.
+4.) If we had all the profiles needed, this could also be automated in the following way: Take a predicted solar array power profile for the current day in the morning, the user must tell the system which appliances he needs on this exact day, the system performs a simulation like above in a few minutes (1-2 minutes depending on CPU power) and switches all the needed appliances on at the perfect time.
+
+I think such systems are possible within the next years. They could learn the power profiles from the smart home system and perform such optimizations automatically and switch all your devices on at the perfect time during the day (appliances must have Smart Home capability). 
+
+****** WORK IN PROGRESS PLEASE EXCUSE TYPOS ETC *****
+
+emefff@gmx.at
