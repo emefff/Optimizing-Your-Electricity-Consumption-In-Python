@@ -26,7 +26,7 @@ In the end, we can calculate the energy saved to be around 0.5kWh and simulate a
 
 So what is the conclusion of all this?
 
-1.) Even we want to optimize only two devices, time is a critcal factor. It's probably never 'perfect' when we just guess.
+1.) Even if we want to optimize only two devices, time is a critcal factor. It's probably never 'perfect' when we just guess.
 
 2.) In reality, we'd have to know our solar array and device power profiles in advance to optimize our devices in the morning. This in only possible with a good prediction of the solar power profiles and good knowledge of the device power profiles. The solar power prediction is possible in Home Assistant, but it is sometimes a bit sketchy. Today, it only works on perfect sunny days.
 
