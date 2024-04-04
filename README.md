@@ -7,8 +7,9 @@ The shared code starts with a lot of number (the power profiles for a few device
 
 ![Figure_1](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/d91ecba5-133e-41a0-910e-57db982ef0b8)
 
-As we can see, there's quite a lot going on with some spiky power values from the coffemaker, laundry machine and dishwasher (please refer to the code for details, it's all there). 
-The curve shown also shows negative values from the solar array. The total power consumed value does not include negative values, negative values are set to zero. This is very important for the optimization. Many readers will already have at least a tiny solar array (commonly referred to as 'Balkonkraftwerk' in the DACH region). So what is this little simulation even good for, if we, as solar array owners already know what to do for energy optimization ('start all appliances during solar hours' is what we need to do)? 
+As we can see, there's quite a lot going on with some spiky power values from the coffemaker, laundry machine and dishwasher (please refer to the code for details, it's all there). We find the total energy consumed to be 5.304 kWh.
+The curve shown also shows negative values from the solar array. The total power consumed value does not include negative values, negative values are set to zero (in small solar arrays in EU, this energy is lost to the user!). This is very important for the optimization. Many readers will already have at least a tiny solar array (commonly referred to as 'Balkonkraftwerk' in the DACH region). So what is this little simulation even good for, if we, as solar array owners already know what to do for energy optimization ('start all appliances during solar hours' is what we need to do)? 
 Of course we can investigate our usage in much greater detail and simulate (profiles needed must be available, of course!) for example, in a first step an optimum start time for the laundry machine. In the code, we just brute-force (minute by minute during a given interval of 5-16 o' clock, that's 5AM to 4PM for all Americans) and scan through a lot of energy values to find the optimum. The result after this first optimization looks like this:
 
+![Figure_2](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/4dcf5e63-048b-4764-8f9d-e107197a56a7)
 
