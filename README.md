@@ -35,6 +35,8 @@ So what is the conclusion of all this?
 
 5.) Owners of small solar arrays would prefer home appliances with power peaks less than 1kW or even less than that. Lower peaks with, in turn, longer duration better fit the small solar array profiles. **This could be accomplished via a 'solar limit power' button on the device**. You probably heard this here first :-). If we had such a button on our dishwashers, washing machines etc. we would even gain more from tiny solar arrays. The devices would probably need better thermal insulation, though.
 
+6.) A similar optimization could also be performed regarding electricity cost.
+
 We think such systems are possible within the next years. They could learn the power profiles from the smart home system and perform such optimizations automatically and switch all your devices on at the perfect time during the day (appliances must have Smart Home capability). 
 Smart boilers are already available, they take an electricity cost profile (for example from the EPEX spot market) for the next day and power on accordingly. This absolutely makes sense, because water heating is one of the, if not THE, main power consumer in our households.
 
