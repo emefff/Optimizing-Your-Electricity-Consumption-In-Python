@@ -18,7 +18,7 @@ We find the optimum starting time for our laundry machine to be in the interval 
 
 ![Figure_3](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/d5ff3ef4-cd53-43fa-9f84-4a52f60ae5a4)
 
-What can we deduct from this? Optimizin the second appliance leads to overlapping with the optimized laundry machine and leads to one local maximum (the first peak; note: a gradient descent method may fail here...). It is caused by overlapping power spikes of the two devices. We want to avoid that, this directly causes the optimim interval to be much more narrow compared to the first optimization. Now we only can shift our dishwasher between 490-510 minutes, that is 08:10-08:30. If we just follow the above mentioned common rule of tiny solar array owners ('swich on all your stuff during solar hours') we could land on this local maximum if we are not careful. It would be a coincidence, though.
+What can we deduct from this? Optimizing the second appliance leads to overlapping with the optimized laundry machine and leads to one local maximum (the first peak; note: a gradient descent method may fail here...). It is caused by overlapping power spikes of the two devices. We want to avoid that, this directly causes the optimim interval to be much more narrow compared to the first optimization. Now we only can shift our dishwasher between 490-510 minutes, that is 08:10-08:30. If we just follow the above mentioned common rule of tiny solar array owners ('swich on all your stuff during solar hours') we could land on this local maximum if we are not careful. It would be a coincidence, though.
 
 In the end, we can calculate the energy saved to be around 0.5kWh and simulate an optimum profile to be:
 
