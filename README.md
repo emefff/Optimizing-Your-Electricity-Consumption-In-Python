@@ -23,10 +23,14 @@ In the end, we can calculate the energy saved to be around 0.5kWh and simulate a
 
 ![Figure_4](https://github.com/emefff/Optimizing-Your-Electricity-Consumption-In-Python/assets/89903493/b0cb3d89-d92e-47b7-9784-d9689a11a0b2)
 
-So what is the conclusion of this?
+So what is the conclusion of all this?
+
 1.) Even we want to optimize only two devices, time is a critcal factor. It's probably never 'perfect' when we just guess.
+
 2.) In reality, we'd have to know our solar array and device power profiles in advance to optimize our devices in the morning! This in only possible with a good prediction of the solar power profiles and good knowledge of the device power profiles. The solar power prediction is possible in Home Assistant, but it is sometimes a bit sketchy. Today, it only works on perfect sunny days.
+
 3.) This type of software could also be used to simulate weeks, months or years in advance. However, we'd rather need 50-100 power profiles (for example for the solar array we'd need days in summer, autumn, winter, spring with sunny, cloudy, etc. weather. Also, water boiler need less energy in summer when we also need less warm water etc. This is a lot of work.) than 5-10.
+
 4.) If we had all the profiles needed, this could also be automated in the following way: Take a predicted solar array power profile for the current day in the morning, the user tells the system which appliances he needs on this exact day, the system performs a simulation like above in a few minutes (1-2 minutes depending on CPU power) and switches all the needed appliances on at the perfect time without user interference (except we still have to put our laundry and dishes etc. in our machines :-( ).
 
 We think such systems are possible within the next years. They could learn the power profiles from the smart home system and perform such optimizations automatically and switch all your devices on at the perfect time during the day (appliances must have Smart Home capability). 
