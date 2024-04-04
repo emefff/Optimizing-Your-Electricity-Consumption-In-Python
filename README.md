@@ -35,6 +35,7 @@ So what is the conclusion of all this?
 
 We think such systems are possible within the next years. They could learn the power profiles from the smart home system and perform such optimizations automatically and switch all your devices on at the perfect time during the day (appliances must have Smart Home capability). 
 Smart boilers are already available, they take an electricity profile for the next day and power on accordingly. This absolutely makes sense, because water heating is one of the, if not THE, main power consumer in our households.
+Two videos are included that illustrate the optimization (the shifted profiles 'travel' through our total power profile), the scanning intervals are smaller, though. Reason: video sizes is too much for Github.
 
 ****** WORK IN PROGRESS PLEASE EXCUSE TYPOS ETC *****
 
