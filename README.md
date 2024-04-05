@@ -34,7 +34,7 @@ So what is the conclusion of all this?
 
 4.) If we had all the profiles needed, this could also be automated in the following way: Take a predicted solar array power profile for the current day in the morning, the user tells the system which appliances he needs on this exact day, the system performs a simulation like above in a few minutes (1-2 minutes depending on CPU power) and switches all the needed appliances on at the perfect time without user interference (except we still have to put our laundry and dishes etc. into our machines ☹️ ).
 
-5.) Owners of small solar arrays would prefer home appliances with power peaks less than 1kW or even less than that. Lower peaks with, in turn, longer duration better fit the small solar array profiles. **This could be accomplished via a 'solar limit power' button on the device**. You probably heard this here first 😊. If we had such a button on our dishwashers, washing machines etc. we would even gain more from tiny solar arrays. The devices would probably need better thermal insulation, though.
+5.) Owners of small solar arrays would prefer home appliances with power peaks less than 1kW or even less than that. Lower peaks with, in turn, longer duration better fit the small solar array profiles. **This could be accomplished via a 'solar limit power' button on the device**. You probably heard this here first 😀. If we had such a button on our dishwashers, washing machines etc. we would even gain more from tiny solar arrays. The devices would probably need better thermal insulation, though.
 
 6.) A similar optimization could also be performed regarding electricity cost.
 
