@@ -43,6 +43,4 @@ Smart boilers are already available, they take an electricity cost profile (for 
 
 Two videos are included that illustrate the optimization (the shifted profiles 'travel' through our total power profile), the scanning intervals are smaller, though. Reason: video sizes too large for Github.
 
-****** WORK IN PROGRESS PLEASE EXCUSE TYPOS ETC *****
-
 emefff@gmx.at
