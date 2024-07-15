@@ -28,7 +28,7 @@ So what is the conclusion of all this?
 
 1.) Even if we want to optimize only two devices, time is a critcal factor. It's probably never 'perfect' when we just guess.
 
-2.) In reality, we'd have to know our solar array and device power profiles in advance to optimize our devices in the morning. This in only possible with a good prediction of the solar power profiles and good knowledge of the device power profiles. The solar power prediction is possible in Home Assistant, but it is sometimes a bit sketchy. Today, it only works on perfect sunny days.
+2.) In reality, we'd have to know our solar array and device power profiles in advance to optimize our devices in the morning. This is only possible with a good prediction of the solar power profiles and good knowledge of the device power profiles. The solar power prediction is possible in Home Assistant, but it is sometimes a bit sketchy. As of today, it only works on perfect sunny days, it cannot predict power generation on partly overcast days (it doesn't know when the next cloud comes to ruin your profile).
 
 3.) This type of software could also be used to simulate weeks, months or years in advance. However, we'd rather need 50-100 power profiles (for example for the solar array we'd need days in summer, autumn, winter, spring with sunny, cloudy, etc. weather. Also, water boilers need less energy in summer when we also need less warm water etc. This is a lot of work.) not just 5-10.
 
